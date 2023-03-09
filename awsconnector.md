@@ -1,0 +1,29 @@
+# Overview
+Overview of the lab
+
+## Connection steps
+
+**Step 1:** Add an AWS Connector in Wiz
+
+**Step 2:** Create the Wiz Role in AWS
+
+**Step 3:** Finish defining the Connector in Wiz
+
+
+## Add an AWS Connector in Wiz
+
+1. ...
+2. ...
+3. ...
+
+## Create the Wiz Role in AWS
+
+1. ...
+2. ...
+3. ...
+
+## Finish defining the Connector in Wiz
+
+1. ...
+2. ...
+3. ...
