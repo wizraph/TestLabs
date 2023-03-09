@@ -1,5 +1,8 @@
 # Overview
-Overview of the lab
+In this labs, we will setup an AWS account to connect to Wiz using the Wiz Connector.
+To retrieve the AWS account credentials and details, select the Environment Details tab.
+
+**Note:** We recommend that you use a new private window of your browser to perform your lab steps.
 
 ## Connection steps
 
