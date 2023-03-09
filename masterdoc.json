@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "WVD Immersion Workshop",
+    "Language": "English",
+    "Files": [
+	    {
+        "RawFilePath": "https://raw.githubusercontent.com/wizraph/TestLabs/main/awsconnector.md",
+        "Order": 1
+      }
+    ]
+  }
+]
