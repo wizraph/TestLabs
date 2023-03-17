@@ -35,8 +35,7 @@ The resources above can be used as part of the auto-remediation exercises, or yo
 
    _**Note:**_ Refer to the **Environment Details** tab for any other lab credentials/details.
 
-   ![](awsconsolecreds.png){:height="60%" width="30%"}
-   <img src="awsconsolecreds.png"  width="60%" height="30%">     
+   ![](awsconsolecreds.png) 
 
 4. Now you will be able to view the home page of the AWS console
    
