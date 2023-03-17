@@ -29,9 +29,7 @@ First, you need to use CloudFormation to instantiate a dedicated SNS Topic, SQS 
 ### Deploy resources from the Wiz bucket
 
 1. Log in to the AWS account where you will place your remediation stack.
-2.Use the link below to launch the CloudFormation Stack. CloudFormation is opened in a new tab with all settings preconfigured.
-
-(https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/quickcreate?stackName=wiz-advanced-remediation&templateURL=https://wizio-public.s3.us-east-2.amazonaws.com/deployment-v2/aws/remediation/cft/cft_wiz_remediation_stack_from_sqs.json)
+2. Click [Launch Stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/quickcreate?stackName=wiz-advanced-remediation&templateURL=https://wizio-public.s3.us-east-2.amazonaws.com/deployment-v2/aws/remediation/cft/cft_wiz_remediation_stack_from_sqs.json). CloudFormation is opened in a new tab with all settings preconfigured.
 
 3. The Auto Remediation stack deployment needs to take place in us-east-2 region.
 4. On the Review page, you can modify the following parameters:
@@ -66,10 +64,10 @@ After creating the required infrastructure in your AWS account(s), there are sev
 
 By default, Cloud Configuration Rules do not generate Issues in Wiz, only Controls. Because auto-remediation can only be performed on an Issue, you must set Cloud Configuration Rules for which you want to enable auto-remediation to function as Controls. 
 
-1. Go to the <a href="https://app.wiz.io/policies/cloud-configuration-rules" target="_blank">Policies > Cloud Configuration Rules</a> page.
+1. Go to the [Policies > Cloud Configuration Rules](https://app.wiz.io/policies/cloud-configuration-rules) page.
 2. Filter for Rules that support auto-remediation in AWS:
    1. Click **Cloud Platform** > **Amazon Web Services**.
-   2. Click **Filter** > **Supports Auto Remediation** > **True** (<a href="https://app.wiz.io/policies/cloud-configuration-rules#~(filters~(serviceType~(equals~(~'AWS))~hasAutoRemediation~(equals~true)))" target="_blank">direct link</a>).
+   2. Click **Filter** > **Supports Auto Remediation** > **True** [(direct link)](https://app.wiz.io/policies/cloud-configuration-rules#~(filters~(serviceType~(equals~(~'AWS))~hasAutoRemediation~(equals~true)))).
 
 ![](https://files.readme.io/2433a6d-rule_as_control.png)
 
@@ -79,7 +77,7 @@ By default, Cloud Configuration Rules do not generate Issues in Wiz, only Contro
 
 You will need the **WizRemediationSNSTopic** ARN from the Outputs section of the CloudFormation stack created in [Step 1](#deployment-steps).
 
-1. Navigate to the <a href="https://us-east-2.console.aws.amazon.com/cloudformation" target="_blank">AWS CloudFormation Dashboard</a> in the region where you created the stack in Step 1.
+1. Navigate to the [AWS CloudFormation Dashboard](https://us-east-2.console.aws.amazon.com/cloudformation) in the region where you created the stack in Step 1.
 2. Click the Wiz Remediation stack name.
 3. Select the **Outputs** tab.
 
@@ -87,7 +85,7 @@ You will need the **WizRemediationSNSTopic** ARN from the Outputs section of the
 
 
 4. Copy the **WizRemediationSNSTopic** ARN to a local file.
-5. Follow the guide on creating an [SNS Integration](doc:sns-integration). <a id="return-from-sns"></a>
+5. Follow the guide on creating an [SNS Integration](https://docs.wiz.io/wiz-docs/docs/sns-integration). 
 
 ### Trigger the Action
 
@@ -99,9 +97,9 @@ Otherwise, you must trigger auto-remediation [on-demand](doc:auto-rem-overview#o
 
 ## (Recommended) Test the Lambda function
 
-The base remediation package comes with a test playbook called [AWS-TEST.py](doc:auto-rem-playbooks-aws#test-event). The comment section in the beginning of the playbook has a sample SQS message that you can use to test your setup.
+The base remediation package comes with a test playbook called [AWS-TEST.py](https://docs.wiz.io/wiz-docs/docs/auto-rem-playbooks-aws#test-event). The comment section in the beginning of the playbook has a sample SQS message that you can use to test your setup.
 
-1. Navigate to your <a href="https://us-east-2.console.aws.amazon.com/lambda" target="_blank">AWS Lambda Dashboard</a>.
+1. Navigate to your [AWS Lambda Dashboard](https://us-east-2.console.aws.amazon.com/lambda).
 2. Click the Function name.
 3. In the Code tab, click the down arrow next to the **Test** button > **Configure test event**.
 4. Choose **Create new test event** along with the `hello-world` **Event template**.
