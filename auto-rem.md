@@ -25,8 +25,7 @@ In this task, you will login to the AWS Console
   
   <img src="gettingstarted.png"  width="80%" height="60%">
 
-   ![](gettingstarted.png)
-
+  
 2. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab. 
   
     _**Note:**_ We recommend you use a private window to log into your lab AWS account.
