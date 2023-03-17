@@ -15,13 +15,15 @@ In this lab we will setup and test Auto-Remediation. As part of the initial setu
 - S3 bucket with ACL and Public Access enabled
 - IAM role with priviledged permissions
 
-Those resources above can be used as part of the auto-remediation exercises, or you can deploy additional resources.
+The resources above can be used as part of the auto-remediation exercises, or you can deploy additional resources.
 
 # Getting started with the AWS console
 
 In this task, you will login to the AWS Console
 
 1. Navigate to the **Environment Details** tab to access the Sign-In link, Username, and Password for your lab.
+  
+  <img src="gettingstarted.png"  width="80%" height="60%">
 
    ![](gettingstarted.png)
 
