@@ -24,14 +24,15 @@ Later on, you might need to [update the built-in playbooks](doc:auto-rem-playboo
 
 ## Deploy auto-remediation infrastructure
 
-First, you need to use CloudFormation to instantiate a dedicated SNS Topic, SQS Queue, IAM Role and Policy, and Lamdba function, from:
-
-- The [Wiz bucket](#deploy-resources-from-the-wiz-bucket) located in `us-east-2`
+First, you need to use CloudFormation to instantiate a dedicated SNS Topic, SQS Queue, IAM Role and Policy, and Lamdba function, from the [Wiz bucket](#deploy-resources-from-the-wiz-bucket) located in `us-east-2`
 
 ### Deploy resources from the Wiz bucket
 
 1. Log in to the AWS account where you will place your remediation stack.
-2. Click <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/quickcreate?stackName=wiz-advanced-remediation&templateURL=https://wizio-public.s3.us-east-2.amazonaws.com/deployment-v2/aws/remediation/cft/cft_wiz_remediation_stack_from_sqs.json" target="_blank">Launch Stack</a>. CloudFormation is opened in a new tab with all settings preconfigured.
+2.Use the link below to launch the CloudFormation Stack. CloudFormation is opened in a new tab with all settings preconfigured.
+
+(https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/quickcreate?stackName=wiz-advanced-remediation&templateURL=https://wizio-public.s3.us-east-2.amazonaws.com/deployment-v2/aws/remediation/cft/cft_wiz_remediation_stack_from_sqs.json)
+
 3. The Auto Remediation stack deployment needs to take place in us-east-2 region.
 4. On the Review page, you can modify the following parameters:
    - `Stack name`—A friendly name given to the remediation stack
