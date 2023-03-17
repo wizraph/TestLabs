@@ -19,16 +19,14 @@ The resources above can be used as part of the auto-remediation exercises, or yo
 
 # Getting started with the AWS console
 
-In this task, you will login to the AWS Console
-
 1. Navigate to the **Environment Details** tab to access the Sign-In link, Username, and Password for your lab.
   
   <img src="gettingstarted.png"  width="80%" height="60%">
 
-  
+
 2. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab. 
   
-    _**Note:**_ We recommend you use a private window to log into your lab AWS account.
+    _**Note:**_ We recommend that you use a private window to log into your lab AWS account.
 
 3. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
@@ -37,6 +35,7 @@ In this task, you will login to the AWS Console
 
    _**Note:**_ Refer to the **Environment Details** tab for any other lab credentials/details.
 
+   ![](awsconsolecreds.png){:height="60%" width="30%"}
    <img src="awsconsolecreds.png"  width="60%" height="30%">     
 
 4. Now you will be able to view the home page of the AWS console
