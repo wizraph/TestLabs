@@ -51,11 +51,10 @@ The resources above can be used as part of the auto-remediation exercises, or yo
 
 [Step 3](#recommended-test-the-lambda-function): (Recommended) Test the Lambda function
 
-If something doesn't go as expected, take a look at the [Troubleshooting](doc:aws-rem-troubleshooting) guide.
+If something doesn't go as expected, take a look at the [Troubleshooting](https://docs.wiz.io/wiz-docs/docs/aws-rem-troubleshooting) guide.
 
 After you've gotten everything deployed, you might consider [editing the built-in IAM permissions](#optional-edit-iam-permissions) if you prefer to adhere to the least-privileged model.
 
-Later on, you might need to [update the built-in playbooks](doc:auto-rem-playbooks-aws#update-playbooks).
 
 ## Deploy the Wiz AWS Connector
 
