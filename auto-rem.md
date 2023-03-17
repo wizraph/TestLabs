@@ -1,5 +1,3 @@
-Deploy the resources required to perform auto-remediation in an AWS environment, and configure Wiz to send Issues to the deployed resources.
-
 # Before you begin
 
 The prerequisites are:
@@ -9,7 +7,9 @@ The prerequisites are:
 
 # Overview
 
-In this lab we will setup and test Auto-Remediation. As part of the initial setup you will receive an AWS account with some pre-configured resources:
+Deploy the resources required to perform auto-remediation in an AWS environment, and configure Wiz to send Issues to the deployed resources.
+
+As part of the initial lab setup, you will receive an AWS account with some pre-configured resources:
 
 - EC2 instance running Ubuntu 16.04 LTS
 - S3 bucket with ACL and Public Access enabled
