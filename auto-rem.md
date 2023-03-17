@@ -4,11 +4,47 @@ Deploy the resources required to perform auto-remediation in an AWS environment,
 
 The prerequisites are:
 
-- The user performing the connection must be an AWS account admin user
-- Access to <a href="https://app.wiz.io/" target="_blank">Wiz</a> as either Global Admin or Global Contributor
+- Access to the Wiz CSAPROD Tenant as either Global Admin or Global Contributor
 - (Recommended) A list of Cloud Configuration Rules in Wiz for which you will enable auto-remediation
 
+# Overview
+
+In this lab we will setup and test Auto-Remediation. As part of the initial setup you will receive an AWS account with some pre-configured resources:
+
+- EC2 instance running Ubuntu 16.04 LTS
+- S3 bucket with ACL and Public Access enabled
+- IAM role with priviledged permissions
+
+Those resources above can be used as part of the auto-remediation exercises, or you can deploy additional resources.
+
+# Getting started with the AWS console
+
+In this task, you will login to the AWS Console
+
+1. Navigate to the **Environment Details** tab to access the Sign-In link, Username, and Password for your lab.
+
+   ![](gettingstarted.png)
+
+2. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab. 
+  
+    _**Note:**_ We recommend you use a private window to log into your lab AWS account.
+
+3. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
+
+   * **AWS Username/Email**:  
+   * **AWS Password**:  
+
+   _**Note:**_ Refer to the **Environment Details** tab for any other lab credentials/details.
+
+   <img src="awsconsolecreds.png"  width="60%" height="30%">     
+
+4. Now you will be able to view the home page of the AWS console
+   
+    ![](consolehome.png)
+
 # Deployment steps
+
+[Step 1](#deploy-the-wiz-aws-connector): Deploy the Wiz AWS Connector
 
 [Step 1](#deploy-auto-remediation-infrastructure): Deploy auto-remediation infrastructure
 
@@ -21,6 +57,10 @@ If something doesn't go as expected, take a look at the [Troubleshooting](doc:aw
 After you've gotten everything deployed, you might consider [editing the built-in IAM permissions](#optional-edit-iam-permissions) if you prefer to adhere to the least-privileged model.
 
 Later on, you might need to [update the built-in playbooks](doc:auto-rem-playbooks-aws#update-playbooks).
+
+## Deploy the Wiz AWS Connector
+
+Follow the instructions from our [docs](https://docs.wiz.io/wiz-docs/docs/aws-connector) to deploy the AWS Connector
 
 ## Deploy auto-remediation infrastructure
 
