@@ -17,6 +17,8 @@ As part of the initial lab setup, you will receive an AWS account with some pre-
 
 The resources above can be used as part of the auto-remediation exercises, or you can deploy additional resources.
 
+**Note:** If you get into any issues that are AWS related or lab-platform related, please contact Raph Soeiro.
+
 # Getting started with the AWS console
 
 1. Navigate to the **Environment Details** tab to access the Sign-In link, Username, and Password for your lab.
@@ -176,3 +178,9 @@ The base remediation package comes with a test playbook called [AWS-TEST.py](htt
 > 👍 
 > 
 > Whew! That's it. You're done setting up auto-remediation.
+
+# End your Lab
+
+1. Navigate to your lab page, and select the **Environment Details** tab.
+
+1. Scroll to the bottom of the page and click on the **DELETE ON DEMAND LAB** button.

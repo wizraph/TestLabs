@@ -11,6 +11,8 @@ Deploy the Wiz Outpost to an Azure tenant and observe scanning process and troub
 
 As part of the initial lab setup, you will receive an Azure tenant.
 
+**Note:** If you get into any issues that are Azure related or lab-platform related, please contact Raph Soeiro.
+
 # Getting started with the Azure Portal
 
 1. To get the lab environment details, including username and password for your allocated Azure tenant, you can select **Environment Details** tab. 
@@ -141,4 +143,11 @@ Select **Allow data scanning** for Wiz to provide DSPM capabilities.
 > 👍 Success
 > 
 > Congrats, you're done! Once the cloud connector is successfully added, the Wiz orchestrator will automatically provision all the required resources in the dedicated subscription (where the Outpost has been created).
+
+
+# End your Lab
+
+1. Navigate to your lab page, and select the **Environment Details** tab.
+
+1. Scroll to the bottom of the page and click on the **DELETE ON DEMAND LAB** button.
 
