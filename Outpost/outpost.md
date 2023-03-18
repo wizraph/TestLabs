@@ -13,7 +13,7 @@ As part of the initial lab setup, you will receive an Azure tenant.
 
 # Getting started with the Azure Portal
 
-1. To get the lab environment details, including username and password for you allocated Azure tenant, you can select **Environment Details** tab. 
+1. To get the lab environment details, including username and password for your allocated Azure tenant, you can select **Environment Details** tab. 
 
 1. Open a new private session and access the Azure portal: https://portal.azure.com/
 
