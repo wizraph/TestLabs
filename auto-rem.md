@@ -60,9 +60,13 @@ After you've gotten everything deployed, you might consider [editing the built-i
 
 ## Deploy the Wiz AWS Connector
 
+>⚠️ ATTENTION ⚠️ For this part of the lab, make sure you are using N. Virginia (us-east-1) as your region in the AWS Console.
+
 Follow the instructions from our [docs](https://docs.wiz.io/wiz-docs/docs/aws-connector) to deploy the AWS Connector
 
 ## Deploy auto-remediation infrastructure
+
+>⚠️ ATTENTION ⚠️ For this part of the lab, make sure you are using Ohio (us-east-2) as your region in the AWS Console.
 
 First, you need to use CloudFormation to instantiate a dedicated SNS Topic, SQS Queue, IAM Role and Policy, and Lamdba function, from the [Wiz bucket](#deploy-resources-from-the-wiz-bucket) located in `us-east-2`
 
