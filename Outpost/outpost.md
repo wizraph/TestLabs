@@ -3,7 +3,7 @@
 The prerequisites are:
 
 - Access to the Wiz WIZLABS Tenant as either Global Admin or Global Contributor
-- If you don't have access to this tenant, ask Raphael for access to it
+- If you don't have access to this tenant, ask Raph Soeiro for access to it
 
 # Overview
 
