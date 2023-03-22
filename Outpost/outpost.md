@@ -34,6 +34,22 @@ As part of the initial lab setup, you will receive an Azure tenant.
 
 1. Leave the rest with the default setting, and finishing the creation by clicking on **Review + create**
 
+# Check for AAD prereqs
+
+1. In the Azure portal, go to Azure Active Director, click on Enterprise applications.
+
+1. Remove the 'Application type == <username>' filter.
+
+1. Search for 'AAD App Management' application.
+
+1. If you are able to find it, go to the next section.
+
+1. If you can't find the application, click on New application.
+
+1. Select or search for Box, open the dialog and click on create.
+
+1. After the Box application is installed, try to search for the 'AAD App Management' application again. If you can find it, go to the next section. Otherwise ask for guidance from Raph or Scott.
+
 # Create a Wiz Outpost in Azure
 
 1. In the Wiz portal, navigate to Settings > Outposts, then click **Add Outpost**.
@@ -77,8 +93,8 @@ As part of the initial lab setup, you will receive an Azure tenant.
 - Scanner Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - Scanner App Name: Wiz Disk Analyzer - Scanner
 - Resource group name: wiz-orchestrator-global-rg
-- Key vault name: kvtst9375
-- Storage account name: strg9375
+- Key vault name: xxxxxxx
+- Storage account name: sxxxxx
 
 8. Return to the Wiz portal. In the New Outpost dialog:
    1. Enter your Azure **Tenant ID** and the **Subscription ID** of the new subscription you created for Wiz. You can find your Tenant ID by searching for Tenant Properties in your Azure portal.
