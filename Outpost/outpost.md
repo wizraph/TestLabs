@@ -21,6 +21,19 @@ As part of the initial lab setup, you will receive an Azure tenant.
 
 1. Login using the credentials from step 1.
 
+# Create a new Virtual Machine
+
+1. In the Azure portal, go to Virtual Machines, and click on **Create**
+
+1. Details:
+    - **Resource Group:** wiz-outpost
+    - **Image:** Ubuntu 18.04 LTS
+    - **Size:** B2s
+    - **Authentication type:** Password
+    - **Select inbound ports:** 22 and 80
+
+1. Leave the rest with the default setting, and finishing the creation by clicking on **Review + create**
+
 # Create a Wiz Outpost in Azure
 
 1. In the Wiz portal, navigate to Settings > Outposts, then click **Add Outpost**.
@@ -54,11 +67,18 @@ As part of the initial lab setup, you will receive an Azure tenant.
 ![](https://files.readme.io/a341b65-script_output.png)
 
 7. Copy the following script outputs to a local file for use below:
-   - Key-vault name
-   - Orchestrator Application (client) ID and Client Secret
-   - Worker Application (client) ID and Client Secret
-   - Resource group name
-   - Storage account name
+- Azure Tenant ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Subscription ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Orchestrator Client ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Orchestrator Client Secret: xxxxxxxxxxxxxxxxxxxxxxxxx
+- Worker Client ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Worker Client Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Scanner Client ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Scanner Secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Scanner App Name: Wiz Disk Analyzer - Scanner
+- Resource group name: wiz-orchestrator-global-rg
+- Key vault name: kvtst9375
+- Storage account name: strg9375
 
 8. Return to the Wiz portal. In the New Outpost dialog:
    1. Enter your Azure **Tenant ID** and the **Subscription ID** of the new subscription you created for Wiz. You can find your Tenant ID by searching for Tenant Properties in your Azure portal.
@@ -70,25 +90,14 @@ As part of the initial lab setup, you will receive an Azure tenant.
 ![](https://files.readme.io/447a4d0-your_new_outpost.png)
 
 > ❗️ 
-> 
+> #Stop here and post your full script output in the advanced-bootcamp-austin-mar23 channel in Slack. Take a short break while we validate your install.
+> ##Wait for Raph to react to your message with a checkmark emoji before continuing. 
+>
+>
 > You're only halfway there!
 > 
 > Once the Wiz Outpost has been created in your Azure environment, you need to add a Connector to receive its data. The clusters will not start running until a cloud connector is deployed, which will trigger the scanning. 
-> Before we add the Connector we will create a VM so the scanner can have something to scan and report back to Wiz.
 
-
-# Create a new Virtual Machine
-
-1. In the Azure portal, go to Virtual Machines, and click on **Create**
-
-1. Details:
-    - **Resource Group:** wiz-outpost
-    - **Image:** Ubuntu 18.04 LTS
-    - **Size:** B2s
-    - **Authentication type:** Password
-    - **Select inbound ports:** 22 and 80
-
-1. Leave the rest with the default setting, and finishing the creation by clicking on **Review + create**
 
 # Connect Wiz App to your cloud
 
@@ -144,8 +153,11 @@ Select **Allow data scanning** for Wiz to provide DSPM capabilities.
 > 
 > Congrats, you're done! Once the cloud connector is successfully added, the Wiz orchestrator will automatically provision all the required resources in the dedicated subscription (where the Outpost has been created).
 
+# Initiate a manual rescan of your connector, or a manual rescan of the VM you created from the Wiz Security Graph. 
 
-# End your Lab
+# Start investigating your Outpost + Connector + VM Scan Status.
+
+## First team to get a fully successful OS Disk Workload scan after solving the intentional issues wins a super exclusive Wiz prize.
 
 1. Navigate to your lab page, and select the **Environment Details** tab.
 
