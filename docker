@@ -1,0 +1,15 @@
+# Start from an outdated version of Ubuntu, e.g., 16.04
+FROM ubuntu:16.04
+
+# Avoid prompting during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install an outdated and vulnerable software package, e.g., Apache HTTP Server 2.4.18
+RUN apt-get update && \
+    apt-get install -y apache2=2.4.18-2ubuntu3.17
+
+# Expose port 80 for the web server
+EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["apache2ctl", "-D", "FOREGROUND"]
