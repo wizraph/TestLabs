@@ -17,3 +17,4 @@ The goal of this lab is to perform a successful workload scan on your target VM.
 4. Make note of your external ID of your target VM in Wiz UI
 5. Start searching Datadog and solving the issues that are present in your Outposts
 6. Please submit log entries (just DataDog links) that confirm you achieved successful scanning of your VM 
+test
